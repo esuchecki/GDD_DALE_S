@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="GD1C2016Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="GD1C2016ModelStoreContainer" />
+        <!--Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'GD1C2016.gd_esquema.Maestra' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="Maestra">
+        <Property Name="Publ_Cli_Dni" Type="numeric" />
+        <Property Name="Publ_Cli_Apeliido" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publ_Cli_Nombre" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publ_Cli_Fecha_Nac" Type="datetime" />
+        <Property Name="Publ_Cli_Mail" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publ_Cli_Dom_Calle" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publ_Cli_Nro_Calle" Type="numeric" />
+        <Property Name="Publ_Cli_Piso" Type="numeric" />
+        <Property Name="Publ_Cli_Depto" Type="nvarchar" MaxLength="50" />
+        <Property Name="Publ_Cli_Cod_Postal" Type="nvarchar" MaxLength="50" />
+        <Property Name="Publ_Empresa_Razon_Social" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publ_Empresa_Cuit" Type="nvarchar" MaxLength="50" />
+        <Property Name="Publ_Empresa_Fecha_Creacion" Type="datetime" />
+        <Property Name="Publ_Empresa_Mail" Type="nvarchar" MaxLength="50" />
+        <Property Name="Publ_Empresa_Dom_Calle" Type="nvarchar" MaxLength="100" />
+        <Property Name="Publ_Empresa_Nro_Calle" Type="numeric" />
+        <Property Name="Publ_Empresa_Piso" Type="numeric" />
+        <Property Name="Publ_Empresa_Depto" Type="nvarchar" MaxLength="50" />
+        <Property Name="Publ_Empresa_Cod_Postal" Type="nvarchar" MaxLength="50" />
+        <Property Name="Publicacion_Cod" Type="numeric" />
+        <Property Name="Publicacion_Descripcion" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publicacion_Stock" Type="numeric" />
+        <Property Name="Publicacion_Fecha" Type="datetime" />
+        <Property Name="Publicacion_Fecha_Venc" Type="datetime" />
+        <Property Name="Publicacion_Precio" Type="numeric" Scale="2" />
+        <Property Name="Publicacion_Tipo" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publicacion_Visibilidad_Cod" Type="numeric" />
+        <Property Name="Publicacion_Visibilidad_Desc" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publicacion_Visibilidad_Precio" Type="numeric" Scale="2" />
+        <Property Name="Publicacion_Visibilidad_Porcentaje" Type="numeric" Scale="2" />
+        <Property Name="Publicacion_Estado" Type="nvarchar" MaxLength="255" />
+        <Property Name="Publicacion_Rubro_Descripcion" Type="nvarchar" MaxLength="255" />
+        <Property Name="Cli_Dni" Type="numeric" />
+        <Property Name="Cli_Apeliido" Type="nvarchar" MaxLength="255" />
+        <Property Name="Cli_Nombre" Type="nvarchar" MaxLength="255" />
+        <Property Name="Cli_Fecha_Nac" Type="datetime" />
+        <Property Name="Cli_Mail" Type="nvarchar" MaxLength="255" />
+        <Property Name="Cli_Dom_Calle" Type="nvarchar" MaxLength="255" />
+        <Property Name="Cli_Nro_Calle" Type="numeric" />
+        <Property Name="Cli_Piso" Type="numeric" />
+        <Property Name="Cli_Depto" Type="nvarchar" MaxLength="50" />
+        <Property Name="Cli_Cod_Postal" Type="nvarchar" MaxLength="50" />
+        <Property Name="Compra_Fecha" Type="datetime" />
+        <Property Name="Compra_Cantidad" Type="numeric" />
+        <Property Name="Oferta_Fecha" Type="datetime" />
+        <Property Name="Oferta_Monto" Type="numeric" Scale="2" />
+        <Property Name="Calificacion_Codigo" Type="numeric" />
+        <Property Name="Calificacion_Cant_Estrellas" Type="numeric" />
+        <Property Name="Calificacion_Descripcion" Type="nvarchar" MaxLength="255" />
+        <Property Name="Item_Factura_Monto" Type="numeric" Scale="2" />
+        <Property Name="Item_Factura_Cantidad" Type="numeric" />
+        <Property Name="Factura_Nro" Type="numeric" />
+        <Property Name="Factura_Fecha" Type="datetime" />
+        <Property Name="Factura_Total" Type="numeric" Scale="2" />
+        <Property Name="Forma_Pago_Desc" Type="nvarchar" MaxLength="255" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GD1C2016Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="GD1C2016Entities" p1:LazyLoadingEnabled="true" />
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GD1C2016ModelStoreContainer" CdmEntityContainer="GD1C2016Entities" />
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
